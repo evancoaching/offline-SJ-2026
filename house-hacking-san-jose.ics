@@ -1,0 +1,20 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Evan Coaching//House Hacking San Jose//VI
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:house-hacking-san-jose-20261024@evancoaching.net
+DTSTAMP:20260921T000000Z
+DTSTART;TZID=America/Los_Angeles:20261024T103000
+DTEND;TZID=America/Los_Angeles:20261024T130000
+SUMMARY:House Hacking San Jose: Chiến Lược Giảm 30% Monthly Payment
+LOCATION:Văn Phòng BRG Realty\, 1900 Camden Ave\, San Jose CA 95124
+DESCRIPTION:Subject: House Hacking San Jose: Chiến Lược Giảm 30% Monthly Payment\n\nDate & Time: Thứ 7\, 24/10/2026 | 10:30 AM - 1:00 PM PDT\nLocation: Văn Phòng BRG Realty\, 1900 Camden Ave\, San Jose CA 95124\nHost: Evan Nguyen\nKhách mời: Sơn Trần - Builder + Trâm Võ - Stager\n\nAgenda:\n1. Giải quyết bài toán payment cho người mua để ở\n2. Giải quyết bài toán negative cash flow cho nhà đầu tư (tenant gánh payment)\n3. Giải đáp cùng builder: phân tích case study cải tạo thật\, áp dụng ngay
+BEGIN:VALARM
+TRIGGER:-PT24H
+ACTION:DISPLAY
+DESCRIPTION:Nhắc lịch House Hacking San Jose trước 24 giờ
+END:VALARM
+END:VEVENT
+END:VCALENDAR

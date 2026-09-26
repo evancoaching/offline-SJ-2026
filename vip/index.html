@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Đăng ký Vip</title>
+  <meta name="description" content="Survey đăng ký vé VIP offline cho sự kiện House Hacking San Jose.">
+  <link rel="icon" href="../favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="../styles.css">
+  <!-- Meta Pixel Code -->
+  <script src="/pixel-base.js"></script>
+  <!-- End Meta Pixel Code -->
+</head>
+<body class="form-page">
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=529476062863594&ev=PageView&noscript=1"
+/></noscript>
+  <div class="container">
+    <a class="brand-link" href="../" aria-label="Evan Coaching — Về trang sự kiện"><img src="https://ik.imagekit.io/evancoaching/Event%20Offline%2010.26/Logo%20EVC.png" alt="Evan Coaching"></a>
+    <main class="form-layout">
+      <div class="form-unified-card">
+        <aside class="form-summary">
+          <span class="eva-sidebar-badge">VIP TICKET</span>
+          <h1>Giữ chỗ tham gia offline event</h1>
+          <p>Hoàn tất khảo sát và nhận cuộc gọi tư vấn từ Evan’s Assistant để hiểu nhu cầu và sự phù hợp.</p>
+          <ul class="summary-list"><li>✓ Số lượng chỗ ngồi có giới hạn - chỉ 12 slot</li><li>✓ Trọn bộ slide, recording và tài liệu độc quyền từ chuyên gia</li><li>✓ Tea break với nước uống &amp; ăn nhẹ</li><li>✓ Chuyên gia giải đáp trực tiếp cuối sự kiện</li><li>✓ <strong>Quà tặng đặc biệt:</strong> Báo giá ADU chất lượng cao + combo staging toàn diện cho ADU</li></ul>
+        </aside>
+        <div class="vip-flow">
+          <section class="form-card" aria-labelledby="vip-form-title">
+            <div class="step-heading">
+              <h2 id="vip-form-title">Đăng ký vé <span class="ticket-highlight">VIP</span></h2>
+              <p class="form-intro">Điền thông tin bên dưới để hoàn tất đăng ký.</p>
+            </div>
+            <div class="eva-hs-form-wrapper" id="eva-custom-form"></div>
+          </section>
+        </div>
+      </div>
+    </main>
+  </div>
+  <script src="../app.js"></script>
+  <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
+  <script>
+    hbspt.forms.create({
+      region: "na1",
+      portalId: "43616350",
+      formId: "36fae9e5-80a0-4b98-9e35-01c0641e4516",
+      target: "#eva-custom-form",
+      css: "",
+      onFormReady: function ($form) {
+        var nextBtn = $form.find('input[type="submit"], button.hs-button, .actions .hs-button');
+        if (nextBtn.length) nextBtn.addClass('eva-btn-next-arrow');
+        var backBtn = $form.find('.hs-back-button, button.hs-back');
+        if (backBtn.length) { $form.prepend(backBtn); backBtn.addClass('eva-btn-back-arrow'); }
+      }
+      // Note: this form is a HubSpot multi-page form, which is not an Embed v2/v3
+      // compatible form — onFormSubmitted never fires for it (confirmed via HubSpot's
+      // API returning "Not an Embed version 2 or 3 form"). Navigation after submit is
+      // handled natively by HubSpot's own "Redirect to another page" setting on the
+      // form (configure in the HubSpot dashboard to point to /vip-ty/).
+    });
+  </script>
+</body>
+</html>
