@@ -26,5 +26,25 @@ src="https://www.facebook.com/tr?id=529476062863594&ev=PageView&noscript=1"
     <div class="actions"><a class="btn secondary" href="../" data-track-content="back-to-event">Về trang sự kiện</a></div>
   </main>
   <script src="../app.js"></script>
+  <!-- Meta Pixel - Lead Event Trigger (Có chống F5) -->
+  <script>
+    // Kiểm tra xem sự kiện này đã được bắn trong phiên duyệt web này chưa
+    if (!sessionStorage.getItem('standard_lead_fired')) {
+      if (typeof fbq === 'function') {
+        // 1. Bắn Event Chuẩn 'Lead' của Meta (có gửi kèm giá trị)
+        fbq('track', 'Lead', {
+          content_name: 'standard_ticket',
+          value: 50.00,
+          currency: 'USD'
+        });
+
+        // 2. Bắn thêm Custom Event 'StandardLead' để phân biệt riêng với tệp VIP
+        fbq('trackCustom', 'StandardLead');
+
+        // Đánh dấu là đã bắn thành công trong phiên này
+        sessionStorage.setItem('standard_lead_fired', 'true');
+      }
+    }
+  </script>
 </body>
 </html>

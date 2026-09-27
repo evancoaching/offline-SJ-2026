@@ -31,5 +31,25 @@ src="https://www.facebook.com/tr?id=529476062863594&ev=PageView&noscript=1"
     <div class="actions"><a class="btn" target="_blank" rel="noopener" href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=House+Hacking+San+Jose%3A+Chi%E1%BA%BFn+L%C6%B0%E1%BB%A3c+Gi%E1%BA%A3m+30%25+Monthly+Payment&amp;dates=20261024T173000Z%2F20261024T200000Z&amp;ctz=America%2FLos_Angeles&amp;location=V%C4%83n+Ph%C3%B2ng+BRG+Realty%2C+1900+Camden+Ave%2C+San+Jose+CA+95124&amp;details=Subject%3A+House+Hacking+San+Jose%3A+Chi%E1%BA%BFn+L%C6%B0%E1%BB%A3c+Gi%E1%BA%A3m+30%25+Monthly+Payment%0A%0ADate+%26+Time%3A+Th%E1%BB%A9+7%2C+24%2F10%2F2026+%7C+10%3A30+AM+-+1%3A00+PM+PDT%0ALocation%3A+V%C4%83n+Ph%C3%B2ng+BRG+Realty%2C+1900+Camden+Ave%2C+San+Jose+CA+95124%0AHost%3A+Evan+Nguyen%0AKh%C3%A1ch+m%E1%BB%9Di%3A+S%C6%A1n+Tr%E1%BA%A7n+-+Builder+%2B+Tr%C3%A2m+V%C3%B5+-+Stager%0A%0AAgenda%3A%0A1.+Gi%E1%BA%A3i+quy%E1%BA%BFt+b%C3%A0i+to%C3%A1n+payment+cho+ng%C6%B0%E1%BB%9Di+mua+%C4%91%E1%BB%83+%E1%BB%9F%0A2.+Gi%E1%BA%A3i+quy%E1%BA%BFt+b%C3%A0i+to%C3%A1n+negative+cash+flow+cho+nh%C3%A0+%C4%91%E1%BA%A7u+t%C6%B0+%28tenant+g%C3%A1nh+payment%29%0A3.+Gi%E1%BA%A3i+%C4%91%C3%A1p+c%C3%B9ng+builder%3A+ph%C3%A2n+t%C3%ADch+case+study+c%E1%BA%A3i+t%E1%BA%A1o+th%E1%BA%ADt%2C+%C3%A1p+d%E1%BB%A5ng+ngay" data-track-content="google-calendar">Thêm vào Google Calendar</a><a class="btn secondary" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=1900%20Camden%20Ave%2C%20San%20Jose%2C%20CA%2095124" data-track-content="directions">Xem đường đến hội trường</a><a class="btn secondary" href="../" data-track-content="back-to-event">Về trang sự kiện</a></div>
   </main>
   <script src="../app.js"></script>
+  <!-- Meta Pixel - Lead Event Trigger (Có chống F5) -->
+  <script>
+    // Kiểm tra xem sự kiện này đã được bắn trong phiên duyệt web này chưa
+    if (!sessionStorage.getItem('vip_lead_fired')) {
+      if (typeof fbq === 'function') {
+        // 1. Bắn Event Chuẩn 'Lead' của Meta (có gửi kèm giá trị)
+        fbq('track', 'Lead', {
+          content_name: 'vip_ticket',
+          value: 50.00,
+          currency: 'USD'
+        });
+
+        // 2. Bắn thêm Custom Event 'VIPLead' để phân biệt riêng với tệp Standard
+        fbq('trackCustom', 'VIPLead');
+
+        // Đánh dấu là đã bắn thành công trong phiên này
+        sessionStorage.setItem('vip_lead_fired', 'true');
+      }
+    }
+  </script>
 </body>
 </html>
