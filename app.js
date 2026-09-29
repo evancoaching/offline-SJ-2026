@@ -3,7 +3,7 @@ const EVENT_DATE = new Date('2026-10-24T10:30:00-07:00');
 function addTrackingToUrl(rawUrl, slug) {
   const url = new URL(rawUrl, window.location.href);
   const current = new URL(window.location.href);
-  ['utm_source', 'utm_medium'].forEach((key) => {
+  ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_id', 'fbclid', 'fbc_id', 'h_ad_id'].forEach((key) => {
     if (!url.searchParams.has(key) && current.searchParams.has(key)) url.searchParams.set(key, current.searchParams.get(key));
   });
   if (!url.searchParams.has('utm_source')) url.searchParams.set('utm_source', 'landing-page');
