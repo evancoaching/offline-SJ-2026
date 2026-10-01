@@ -54,15 +54,31 @@ src="https://www.facebook.com/tr?id=529476062863594&ev=PageView&noscript=1"
           </ul>
         </div>
         <div class="hero-info">
-          <p class="eyebrow">Offline event in San Jose - Chỉ 12 ghế VIP</p>
-          <p class="hero-info-subtitle"><strong>Bạn có sẵn down payment nhưng vẫn ngại monthly payment cao?</strong></p>
+          <p class="eyebrow">Offline event in San Jose</p>
+          <p class="hero-info-title">Bạn có sẵn down payment nhưng vẫn ngại monthly payment cao?</p>
           <p class="hero-info-subtitle">Buổi chia sẻ chuyên sâu dành cho buyer đang tìm nhà tại San Jose, có kế hoạch mua trong 3-6 tháng tới và muốn dùng chính căn nhà để giảm gánh nặng monthly payment.</p>
-          <ul class="hero-info-details">
-            <li>📅 Thứ Bảy, 10/24/2026</li>
-            <li>🕥 10:30 AM – 1:00 PM (PDT)</li>
-            <li>📍 1900 Camden Ave, San Jose, CA 95124</li>
-          </ul>
-          <a class="btn full" href="#ticket" data-track-content="hero-cta">Đăng ký ngay<svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          <p class="hero-ticket-label">Chọn hạng vé</p>
+          <div class="hero-ticket-cards">
+            <article class="hero-ticket-card hero-ticket-vip">
+              <div class="hero-ticket-card-head">
+                <h3>VIP Ticket · $35</h3>
+                <span class="hero-ticket-badge">Chỉ 12 ghế VIP</span>
+              </div>
+              <ul class="hero-ticket-list">
+                <li><svg class="hero-ticket-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Trao đổi và tư vấn trực tiếp với diễn giả</span></li>
+                <li><svg class="hero-ticket-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Nhận special gifts - đặc quyền chỉ có khi tham dự</span></li>
+              </ul>
+              <a class="btn full" href="#ticket" data-track-content="hero-vip-ticket">Đăng ký vé VIP</a>
+            </article>
+            <article class="hero-ticket-card hero-ticket-standard">
+              <h3>Standard Ticket · Miễn phí</h3>
+              <p class="hero-ticket-note">Chưa sắp xếp tham dự được offline event?</p>
+              <ul class="hero-ticket-list">
+                <li><svg class="hero-ticket-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Nhận recording trọn buổi chia sẻ</span></li>
+              </ul>
+              <a class="btn secondary full" href="#ticket" data-track-content="hero-standard-ticket">Đăng ký vé Standard</a>
+            </article>
+          </div>
         </div>
       </div>
     </section>
@@ -110,6 +126,11 @@ src="https://www.facebook.com/tr?id=529476062863594&ev=PageView&noscript=1"
         <p class="video-hook"><span aria-hidden="true">▼</span> Bấm play để xem trọn vẹn lời nhắn từ Evan <span aria-hidden="true">▼</span></p>
         <div class="video-wrap">
           <iframe id="event-video" title="Video chiến lược House Hacking của Evan" src="https://player.vdocipher.com/v2/?otp=20160313versASE3232lh6zQ0vHzxX0xeXJzwF3TpNTN5ukqBciKtCC2L38oEy0e&amp;playbackInfo=eyJ2aWRlb0lkIjoiMmQyZjBlOGM2ZDViNDJjYjhmODJjMmY3NmJjZWQxOGQifQ==" allow="encrypted-media; picture-in-picture" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+        <div class="video-pin-info">
+          <span class="video-pin-badge">📌 Thời gian tổ chức</span>
+          <span class="video-pin-item">📅 <strong>Thứ Bảy, 10/24/2026</strong></span>
+          <span class="video-pin-item">🕥 <strong>10:30 AM – 1:00 PM (PDT)</strong></span>
         </div>
         <a class="btn video-cta" href="#ticket" data-track-content="solution-cta">Đăng ký ngay<svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
       </div>
@@ -229,58 +250,64 @@ src="https://www.facebook.com/tr?id=529476062863594&ev=PageView&noscript=1"
     <section class="tickets-section" id="ticket" aria-labelledby="tickets-title">
       <div class="container">
         <div class="tickets-head">
-          <h2 class="section-title" id="tickets-title">Cách thức <span class="accent">đăng ký</span></h2>
-          <p class="section-lede">Đây là sự kiện phi lợi nhuận, toàn bộ giá vé được dùng để phụ chi cho công tác tổ chức.</p>
+          <h2 class="section-title" id="tickets-title">Chọn hình thức <span class="accent">tham gia</span></h2>
         </div>
-        <div class="ticket-steps">
-          <div class="ticket-step">
-            <span class="ticket-step-num">1</span>
-            <div class="ticket-step-body"><strong>Đăng ký giữ chỗ</strong><p>Điền form ngắn về kế hoạch mua nhà.</p></div>
-          </div>
-          <div class="ticket-step">
-            <span class="ticket-step-num">2</span>
-            <div class="ticket-step-body"><strong>Team Evan xem hồ sơ</strong><p>Liên hệ xác nhận mức độ phù hợp.</p></div>
-          </div>
-          <div class="ticket-step">
-            <span class="ticket-step-num">3</span>
-            <div class="ticket-step-body"><strong>Xác nhận ghế VIP</strong><p>Thanh toán $35 &amp; tham dự event.</p></div>
-          </div>
-        </div>
-        <article class="vip-feature-card">
-          <div class="vip-feature-left">
-            <span class="vip-feature-badge">🔥 CHỈ 12 GHẾ · OFFLINE ONLY</span>
-            <h3>VIP TICKET</h3>
-            <p class="vip-feature-sub">Dành cho các bạn có thể tham gia offline, muốn gặp gỡ và tư vấn riêng với Speaker.</p>
-            <div class="price price-lg"><strong>$35</strong><span>/ người</span></div>
-            <a class="btn full" href="./vip/" data-track-content="vip-ticket">Đăng ký vé VIP ngay<svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
-          </div>
-          <div class="vip-feature-right">
-            <div class="vip-highlight">
-              <h4 class="vip-highlight-title">ĐẶC QUYỀN CHỈ CÓ TẠI EVENT OFFLINE</h4>
-              <ul class="vip-highlight-list">
-                <li><span class="vip-highlight-icon">⚡</span><span><strong>Đánh giá Loan Qualification</strong> phù hợp cho từng cá nhân để MUA NHÀ &amp; XÂY ADU</span></li>
-                <li><span class="vip-highlight-icon">⚡</span><span><strong>Cấp Pre-Approval</strong> sau sự kiện (nếu qualified)</span></li>
-                <li><span class="vip-highlight-icon">⚡</span><span><strong>Nhận danh sách listings</strong> phù hợp để xây ADU</span></li>
-                <li><span class="vip-highlight-icon">⚡</span><span><strong>Bản báo giá xây ADU</strong> chất lượng cao, tối ưu chi phí</span></li>
-                <li><span class="vip-highlight-icon">⚡</span><span><strong>Tặng combo trang trí nội thất</strong> và toàn bộ furniture đi kèm căn ADU</span></li>
+        <div class="tickets-cards">
+          <article class="ticket-card ticket-card-standard vip-feature-card is-highlighted">
+            <div class="vip-feature-left">
+              <span class="vip-feature-badge vip-feature-badge-outline">MIỄN PHÍ</span>
+              <h3>STANDARD TICKET</h3>
+              <p class="vip-feature-sub">Chưa sắp xếp tham dự được offline event? Đăng ký vé Standard để không bỏ lỡ nội dung chia sẻ.</p>
+              <div class="price price-lg"><strong>FREE</strong></div>
+              <a class="btn secondary full" href="./standard/" data-track-content="standard-ticket">Đăng ký vé Standard</a>
+            </div>
+            <div class="vip-feature-right">
+              <div class="vip-highlight">
+                <h4 class="vip-highlight-title">QUYỀN LỢI VÉ STANDARD</h4>
+                <ul class="perks">
+                  <li><svg class="perk-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Nhận recording trọn buổi chia sẻ gửi qua mail sau 5 ngày kể từ khi offline event kết thúc</span></li>
+                  <li><svg class="perk-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Đặt lịch hẹn 15 phút tư vấn giải đáp sau khi xem recording</span></li>
+                </ul>
+              </div>
+              <ul class="perks-x">
+                <li><svg class="perk-x" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 6L14 14M14 6L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Đánh giá Loan Qualification phù hợp cho từng cá nhân để mua nhà &amp; xây ADU</span></li>
+                <li><svg class="perk-x" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 6L14 14M14 6L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Cấp Pre-Approval sau sự kiện (nếu qualified)</span></li>
+                <li><svg class="perk-x" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 6L14 14M14 6L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Nhận danh sách listings phù hợp để xây ADU</span></li>
+                <li><svg class="perk-x" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 6L14 14M14 6L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Bản báo giá xây ADU chất lượng cao, tối ưu chi phí</span></li>
+                <li><svg class="perk-x" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M6 6L14 14M14 6L6 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tặng combo trang trí nội thất và toàn bộ furniture đi kèm căn ADU</span></li>
               </ul>
             </div>
-            <div>
-              <h4 class="vip-perks-title">DỊCH VỤ &amp; TÀI LIỆU ĐI KÈM</h4>
-              <ul class="perks">
-                <li><svg class="perk-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Trao đổi &amp; đặt câu hỏi trực tiếp cho speakers</span></li>
-                <li><svg class="perk-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tea-break với nước uống &amp; món ăn nhẹ</span></li>
-                <li><svg class="perk-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Bộ slide, recording &amp; tài liệu độc quyền từ speakers sau offline event 24h</span></li>
-              </ul>
+          </article>
+          <article class="ticket-card ticket-card-vip vip-feature-card">
+            <div class="vip-feature-left">
+              <span class="vip-feature-badge">🔥 CHỈ 12 GHẾ · OFFLINE ONLY</span>
+              <h3>VIP TICKET</h3>
+              <p class="vip-feature-sub">Dành cho các bạn có thể tham gia offline, muốn gặp gỡ và tư vấn riêng với diễn giả.</p>
+              <div class="price price-lg"><strong>$35</strong><span>/ người</span></div>
+              <a class="btn full" href="./vip/" data-track-content="vip-ticket">Đăng ký vé VIP ngay<svg class="btn-arrow" width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3.5 8H12.5M12.5 8L8.5 4M12.5 8L8.5 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+              <p class="vip-feature-note">Đây là sự kiện phi lợi nhuận, toàn bộ giá vé được dùng để phụ chi cho công tác tổ chức.</p>
             </div>
-          </div>
-        </article>
-        <div class="ticket-alt-bar">
-          <div>
-            <div class="ticket-kicker">STANDARD</div>
-            <p>Chưa sẵn sàng mua nhà trong 3-6 tháng tới? Nhận recording miễn phí trọn buổi chia sẻ được gửi sau 5 ngày diễn ra offline event &amp; 15 phút giải đáp cùng Evan's Team.</p>
-          </div>
-          <a class="btn secondary" href="./standard/" data-track-content="standard-ticket">Đăng ký vé Standard</a>
+            <div class="vip-feature-right">
+              <div class="vip-highlight">
+                <h4 class="vip-highlight-title">ĐẶC QUYỀN CHỈ CÓ TẠI EVENT OFFLINE</h4>
+                <ul class="vip-highlight-list">
+                  <li><span class="vip-highlight-icon">⚡</span><span><strong>Đánh giá Loan Qualification</strong> phù hợp cho từng cá nhân để MUA NHÀ &amp; XÂY ADU</span></li>
+                  <li><span class="vip-highlight-icon">⚡</span><span><strong>Cấp Pre-Approval</strong> sau sự kiện (nếu qualified)</span></li>
+                  <li><span class="vip-highlight-icon">⚡</span><span><strong>Nhận danh sách listings</strong> phù hợp để xây ADU</span></li>
+                  <li><span class="vip-highlight-icon">⚡</span><span><strong>Bản báo giá xây ADU</strong> chất lượng cao, tối ưu chi phí</span></li>
+                  <li><span class="vip-highlight-icon">⚡</span><span><strong>Tặng combo trang trí nội thất</strong> và toàn bộ furniture đi kèm căn ADU</span></li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="vip-perks-title">DỊCH VỤ &amp; TÀI LIỆU ĐI KÈM</h4>
+                <ul class="perks">
+                  <li><svg class="perk-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Trao đổi &amp; đặt câu hỏi trực tiếp cho speakers</span></li>
+                  <li><svg class="perk-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Tea-break với nước uống &amp; món ăn nhẹ</span></li>
+                  <li><svg class="perk-check" width="16" height="16" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M5 10.5L8.5 14L15 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span>Bộ slide, recording &amp; tài liệu độc quyền từ speakers sau offline event 24h</span></li>
+                </ul>
+              </div>
+            </div>
+          </article>
         </div>
       </div>
     </section>
