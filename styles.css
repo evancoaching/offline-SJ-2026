@@ -242,6 +242,11 @@ button, input, select { font: inherit; }
 .vip-feature-badge-outline { background: rgba(255,255,255,.14); border: 1px solid rgba(255,255,255,.4); }
 .vip-feature-left .btn { display: flex; width: 100%; margin-top: 26px; }
 .vip-feature-note { margin: 14px 0 0; color: rgba(255,255,255,.6); font-size: .76rem; line-height: 1.5; }
+.vip-feature-note-top { margin: 0 0 18px; padding: 12px 14px; border-radius: 12px; background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.18); color: rgba(255,255,255,.88); font-size: .82rem; font-weight: 600; line-height: 1.55; }
+.price-contribution { margin-bottom: 6px; }
+.price-contribution .price-label { display: block; margin-bottom: 4px; color: rgba(255,255,255,.65); font-size: .72rem; font-weight: 800; letter-spacing: .06em; text-transform: uppercase; }
+.price-contribution strong { color: #fff; font-size: 2rem; font-weight: 900; }
+.price-contribution .unit { margin-left: 4px; color: rgba(255,255,255,.7); font-size: .84rem; }
 .vip-feature-right { padding: 44px 38px; background: #fff; }
 
 .perks-x { padding: 0; margin: 0; list-style: none; }
