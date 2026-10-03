@@ -166,17 +166,6 @@ function setupMobileStickyCta() {
   observer.observe(hero);
 }
 
-function setupTicketCardHighlight() {
-  const cards = [...document.querySelectorAll('.tickets-cards .ticket-card')];
-  if (!cards.length) return;
-  cards.forEach((card) => {
-    card.addEventListener('click', (event) => {
-      if (event.target.closest('a')) return;
-      cards.forEach((other) => other.classList.toggle('is-highlighted', other === card));
-    });
-  });
-}
-
 function registerWebMcpTool() {
   const context = document.modelContext;
   if (!context?.registerTool || !document.querySelector('#ticket')) return;
@@ -210,6 +199,5 @@ setupVipSurvey();
 setupDemoForms();
 setupValueCardsReveal();
 setupMobileStickyCta();
-setupTicketCardHighlight();
 registerWebMcpTool();
 setupTrackedLinks();
