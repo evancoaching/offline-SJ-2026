@@ -158,8 +158,8 @@ Chi tiết:
 - Chỉ còn giới hạn 12 chỗ cho toàn bộ sự kiện
 - Vé bao gồm: đánh giá Loan Qualification cá nhân hoá, cơ hội nhận
   Pre-Approval sau sự kiện, danh sách listings phù hợp xây ADU, báo giá
-  ADU chất lượng cao, combo staging toàn diện cho ADU, tea-break, và
-  trao đổi trực tiếp với speakers
+  ADU chất lượng cao, combo staging toàn diện cho ADU, phục vụ ăn/uống
+  trong giờ giao lưu cùng diễn giả, và trao đổi trực tiếp với speakers
 
 Vui lòng hoàn tất thanh toán sớm để giữ chỗ — số lượng có hạn và ưu tiên
 theo thứ tự thanh toán.
