@@ -166,37 +166,29 @@ function setupMobileStickyCta() {
   observer.observe(hero);
 }
 
-function setupTicketCardHighlight() {
-  const cards = [...document.querySelectorAll('.tickets-cards .ticket-card')];
-  if (!cards.length) return;
-  cards.forEach((card) => {
-    card.addEventListener('click', (event) => {
-      if (event.target.closest('a')) return;
-      cards.forEach((other) => other.classList.toggle('is-highlighted', other === card));
-    });
+function setupVipFormRedirect() {
+  // Fallback for HubSpot's multi-page form: redirect to the VIP thank-you page on submit.
+  const done = new URL('./vip-ty/', window.location.href);
+  window.addEventListener('message', (event) => {
+    const data = event.data;
+    if (!data || data.type !== 'hsFormCallback' || data.eventName !== 'onFormSubmitted') return;
+    window.location.href = addTrackingToUrl(done.href, 'registration-vip').href;
   });
 }
 
 function registerWebMcpTool() {
   const context = document.modelContext;
-  if (!context?.registerTool || !document.querySelector('#ticket')) return;
+  if (!context?.registerTool || !document.querySelector('#register')) return;
   try {
     context.registerTool({
       name: 'start_event_registration',
       title: 'Bắt đầu đăng ký sự kiện',
-      description: 'Chọn vé Standard hoặc VIP và mở đúng form đăng ký của sự kiện House Hacking San Jose.',
-      inputSchema: {
-        type: 'object',
-        properties: { ticket: { type: 'string', enum: ['standard', 'vip'] } },
-        required: ['ticket'],
-        additionalProperties: false
-      },
+      description: 'Cuộn tới form đăng ký vé VIP của sự kiện House Hacking San Jose.',
+      inputSchema: { type: 'object', properties: {}, additionalProperties: false },
       annotations: { readOnlyHint: false, untrustedContentHint: false },
-      execute(input) {
-        if (!input || !['standard', 'vip'].includes(input.ticket)) throw new Error('Hạng vé không hợp lệ.');
-        const path = input.ticket === 'vip' ? './vip/' : './standard/';
-        window.location.href = path;
-        return { ticket: input.ticket, next: path };
+      execute() {
+        document.querySelector('#register')?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        return { ticket: 'vip', target: '#register' };
       }
     });
   } catch (error) {
@@ -210,6 +202,6 @@ setupVipSurvey();
 setupDemoForms();
 setupValueCardsReveal();
 setupMobileStickyCta();
-setupTicketCardHighlight();
 registerWebMcpTool();
+if (document.querySelector('#register')) setupVipFormRedirect();
 setupTrackedLinks();
