@@ -94,6 +94,12 @@ button, input, select { font: inherit; }
 .hero-ticket-list li { display: flex; align-items: flex-start; gap: 8px; color: var(--ink-2); font-size: .84rem; line-height: 1.4; }
 .hero-ticket-check { flex: none; margin-top: 2px; color: var(--pink); }
 .hero-ticket-card .btn { min-height: 42px; padding: 10px 20px; font-size: .88rem; }
+.hero-offer { margin: 0 0 14px; padding: 14px 16px 2px; border: 1.5px solid var(--pink); border-radius: 16px; background: #fff; box-shadow: 0 10px 24px rgba(237,63,115,.14); }
+.hero-form-card { overflow: hidden; padding: 18px 18px 8px; border: 1.5px solid var(--rose-200); border-radius: 16px; background: #fff; }
+.hero-form-title { margin: 0 0 6px; color: var(--ink); font-size: 1.05rem; font-weight: 900; line-height: 1.3; }
+.hero-form-subtext { margin: 0 0 14px; color: var(--ink-2); font-size: .84rem; line-height: 1.5; }
+.hero-form-card .hs-form-frame { margin: 0 -40px; }
+.hero-offer h3 { margin: 0; color: var(--ink); font-size: 1rem; font-weight: 900; }
 
 /* Reusable badge + accent + reveal-on-scroll */
 .badge-pill { display: inline-flex; width: fit-content; margin: 0 auto 16px; padding: 8px 16px; border: 1px solid var(--rose-200); border-radius: 999px; color: var(--pink-dark); background: var(--rose-100); font-size: .8rem; font-weight: 700; letter-spacing: .02em; }
